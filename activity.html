@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header1 {
+            background-image: url("dark-wall-empty-room-with-plants-floor-3d-rendering.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 20vh;
+            position: relative;
+
+        }
+
+        .header1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header12 li {
+            display: inline;
+            list-style-type: none;
+
+
+
+        }
+
+        .header12 li a {
+            text-decoration: none;
+            color: white;
+
+            font-size: 25px;
+            font-weight: 500;
+            font-style: normal;
+            padding: 10px 20px;
+            transition: 1s;
+
+        }
+
+        .header12 li a:hover {
+            background: white;
+            color: grey;
+            transform: scale(1);
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+        .header12 {
+            padding-top: 3%;
+            padding-right: 1%;
+
+        }
+
+        .header11 img {
+            width: 4cm;
+            height: 2cm;
+            float: left;
+            padding-left: 25%;
+            padding-top: 15%;
+            filter: invert(1)
+        }
+
+        .hr {
+            border: 2px solid rgb(217, 132, 29);
+
+        }
+
+        .l1 {
+            text-align: center;
+        }
+
+        .underline {
+            display: inline-block;
+            border: yellow 1px solid;
+            background-color: yellow;
+            height: 2px;
+            width: 100px;
+
+        }
+        .layout1{
+            background-color: rgb(240, 229, 216);
+        }
+
+        .heading1 {
+            text-align: center;
+            background-color: rgb(65, 65, 84);
+            margin-left: 10cm;
+            margin-right: 10cm;
+            color: white;
+        }
+        table{
+            text-align: center;
+            margin-left: 5mm;
+            margin-right: 5mm;
+        }
+        table, th,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.heading2 {
+            text-align: center;
+            background-color: rgb(65, 65, 84);
+            margin-left: 10cm;
+            margin-right: 10cm;
+            color: white;
+        }
+        .footer{
+                display: flex;
+                justify-content: space-between;
+                background-color: aquamarine;
+                padding-left: 10mm;
+                padding-right: 10mm;
+                
+                
+            }
+            .footer .footer1 .footer11{
+                text-decoration: underline yellow;
+                text-align: center;
+            }
+            .footer .footer1 .footer12{
+                text-align: center;
+                
+            }
+            .footer .footer2 .footer21{
+                text-decoration: underline yellow;
+                text-align: center;
+            }
+            .footer22 li a{
+                text-align: center;
+                text-decoration: none;
+                list-style-type: none;
+
+                 
+            }
+            .footer22 li {
+                text-decoration: none;
+                list-style-type: none;
+            }
+
+            .footer .footer2 .footer22 li a:hover{
+                color: sandybrown;
+                font-size: 5mm;
+                transition: all 1s;
+            }
+            .footer .footer3 .footer32{
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .footer .footer3 .footer31{
+                text-decoration: underline yellow;
+
+                
+            }
+            .footer .footer3 i{
+                color: darkgoldenrod;
+            }
+            .footer32 i:hover{
+                color: blueviolet;
+            }
+            .footer4{
+                text-align: center;
+                background-color: aquamarine;
+                
+            }
+            #grid1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            height: 20cm;
+            
+            padding: 30px;
+        }
+
+        #grid1>div {
+            background-color: bisque;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 25px;
+        }
+
+        .item {
+            display: block;
+            position: relative;
+            overflow: hidden;
+        
+        }
+
+        .item::after {
+            content: "";
+            position: absolute;
+            display: block;
+            background: inherit;
+            background-color: cornflowerblue;
+            opacity: 0.9;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+            transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
+        }
+
+        .item1 {
+            display: block;
+            position: relative;
+            height: auto;
+        }
+
+        .item1 img{
+            align-items: center;
+            position: absolute;
+            margin-top: -4mm;
+            left: 0;
+            height: 6.5cm;
+            width: 10.5cm;
+            line-height: 0;
+          }
+
+
+        .itemtext {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            text-align: center;
+            z-index: 1;
+            color: rgb(241, 243, 247); 
+            transform: translateX(-20%);
+            transition-delay: 300ms;
+        }
+
+        .item:hover::after {
+            transform: scale(2) translateX(0%) translateY(0%) rotate(-28deg);
+          }
+          .item:hover .item1{
+            transform: scale(1.2);
+            transition: all 1s;
+          }
+          .item:hover .item2{
+            transform: scale(1.2);
+            transition: all 1s;
+          }
+          .item:hover .item4{
+            transform: scale(1.2);
+            transition: all 1s;
+          }
+          .item:hover .item5{
+            transform: scale(1.2);
+            transition: all 1s;
+          }
+          .item:hover .item6{
+            transform: scale(1.2);
+            transition: all 1s;
+          }
+          .item:hover .item7{
+            transform: scale(1.2);
+            transition: all 1s;
+          }
+          .item:hover .item8{
+            transform: scale(1.2);
+            transition: all 1s;
+          }
+          .item:hover .item9{
+            transform: scale(1.2);
+            transition: all 1s;
+          }
+          .item:hover .item10{
+            transform: scale(1.2);
+            transition: all 1s;
+          }
+
+          .item:hover .itemtext {
+            opacity: 1;
+            transform: translateY(0);
+        
+          }
+
+          .text1{
+            
+            
+                position: absolute;
+                width: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+              
+                font-size: 2rem;
+                padding: 0 1rem;
+                margin: 5px 0 0 0;
+            
+          }
+    
+
+    </style>
+</head>
+
+<body>
+    
+
+    
+    <div class="header1">
+        <div class="header11">
+            <img src="logo main.jpg" alt="logo">
+        </div>
+        <div class="header12">
+            <ul>
+                <li>
+                    <a href="index1.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html"> About</a>
+                </li>
+                <li>
+                    <a href="activity.html"> Activities</a>
+                </li>
+                <li>
+                    <a href="blog.html"> Blog </a>
+                </li>
+                <li>
+                    <a href="work.html"> Projects</a>
+                </li>
+                <li>
+                    <a href="contact.html"> Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <hr class="hr">
+    <br>
+    <div id="grid1">
+
+        <div class="item">
+            <div class="item1"> <img src="certificate5.jpg" alt=""></div>
+
+            <div class="itemtext">
+                <h4 class="text1">Campaining</h4>
+            </div>
+        </div>
+        <div class="item">
+        <div class="item1"> <img src="DARSH 1.jpg" alt=""></div> 
+        <div class="itemtext">
+                <h4 class="text1">Mini-Millitia</h4>
+            </div>
+    
+    </div>
+    <div class="item">
+        <div class="item1"> <img src="certificate3.jpg" alt=""></div> 
+        <div class="itemtext">
+                <h4 class="text1">Talaash</h4>
+            </div>
+    
+    </div>
+    <div class="item">
+        <div class="item1"> <img src="DARSH 2.jpg" alt=""></div> 
+        <div class="itemtext">
+                <h4 class="text1">Digital transformation</h4>
+            </div>
+    
+    </div>
+    <div class="item">
+        <div class="item1"> <img src="certificate1.jpg" alt=""></div> 
+        <div class="itemtext">
+                <h4 class="text1">Python Programming</h4>
+            </div>
+    
+    </div>
+    <div class="item">
+        <div class="item1"> <img src="certificate3.jpg" alt=""></div> 
+        <div class="itemtext">
+                <h4 class="text1">Covid-19</h4>
+            </div>
+    
+    </div>
+    <div class="item">
+        <div class="item1"> <img src="certificate2.jpg" alt=""></div> 
+        <div class="itemtext">
+                <h4 class="text1">Presentation</h4>
+            </div>
+    
+    </div>
+    <div class="item">
+        <div class="item1"> <img src="DARSH 3.jpg" alt=""></div> 
+        <div class="itemtext">
+                <h4 class="text1">Social Media Merket</h4>
+            </div>
+    
+    </div>
+    <div class="item">
+        <div class="item1"> <img src="certificate4.jpg" alt=""></div> 
+        <div class="itemtext">
+                <h4 class="text1"> blog </h4>
+            </div>
+    
+    </div>
+ 
+
+    </div>
+    <div class="layout1">
+        <br>
+    <div class="l1">
+        <div>
+            <h1>MY ACTIVITY</h1>
+        </div>
+        <div class="underline">
+
+        </div>
+    </div><br><br>
+    <div class="heading1">
+        <h2>TECHNICAL/RESEARCH SKILL</h2>
+    </div><br>
+    <table>
+        <tr>
+            <th>
+                Row Number
+            </th>
+            <th>
+                Major Catagory
+            </th>
+            <th>
+                Activity
+            </th>
+            <th>
+                Level
+            </th>
+            <th>
+                Event Date
+            </th>
+            <th>
+                Description
+            </th>
+        </tr>
+       <tr> <td>1</td>
+        <td>Technical/Research skill</td>
+        <td>Student skill development</td>
+        <td>Inter-college</td>
+        <td>21/09/2021</td>
+        <td>I DID COURSE ON A DIPLOMA IN MULTILINGUAL COMPUTER PROGRAMMING.</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Technical/Research skill</td>
+        <td>Workshop</td>
+        <td>Inter-collegee</td>
+        <td>01/09/2021</td>
+        <td>I ATTEND A WORKSHOP ON CAREER GUIDANCE AT I.C.E. GATE EDUCATION PRIVATE LIMITED.</td>
+
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Technical/Research skill</td>
+        <td>Techfest</td>
+        <td>Inter-collegee</td>
+        <td>28/10/2021</td>
+        <td>I SECURED A RANK 3 IN EXPEDITION 2.0 EVENT IN E-TECHFEST ORGANISED BY SILVER OAK UNIVERSITY.</td>
+
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Technical/Research skill</td>
+        <td>Workshop</td>
+        <td>Inter-collegee</td>
+        <td>25/09/2021</td>
+        <td>I ATTEND A WEBINAR ON QUOTDIGITAL TRANSFORMATION FUNDAMENTALS.</td>
+
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Technical/Research skill</td>
+        <td>Student skill development</td>
+        <td>Inter-collegee</td>
+        <td>10/09/2021</td>
+        <td>I HAS PARTICIPATED IN ONLINE NATIONAL LEVEL QUIZ ON PYTHON PROGRAMMING.</td>
+
+    </tr>
+    </table><br><br><br>
+    <div class="heading2">
+        <h2>Sports and cultural</h2>
+    </div><br>
+    <table>
+        <tr>
+            <th>
+                Row Number
+            </th>
+            <th>
+                Major Catagory
+            </th>
+            <th>
+                Activity
+            </th>
+            <th>
+                Level
+            </th>
+            <th>
+                Event Date
+            </th>
+            <th>
+                Description
+            </th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Sports and Cultural</td>
+            <td>Cultural</td>
+            <td>College level</td>
+            <td>22/02/2020</td>
+            <td>I TOOK PART IN JUNOON 2020 OF SILVER OAK UNIVERSITY.I TOOK PART IN JUNOON 2020 OF SILVER OAK UNIVERSITY.</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Sports and Cultural</td>
+            <td>Sports</td>
+            <td>Inter-college</td>
+            <td>10/09/2020</td>
+            <td>I TOOK PART IN ONLINE TEST THAT EVALUATES GENERAL KNOWLEDGE AWARENESS.I TOOK PART IN ONLINE TEST THAT EVALUATES GENERAL KNOWLEDGE AWARENESS.</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Sports and Cultural</td>
+            <td>Cultural</td>
+            <td>Inter-college</td>
+            <td>15/05/2021</td>
+            <td>THERE WAS A TALAASH IN SILVER OAK UNIVERSITY IN 2019.THERE WAS A TALAASH IN SILVER OAK UNIVERSITY IN 2019.</td>
+        </tr>
+    </table><br>
+</div>
+    <div class="footer">
+        <div class="footer1">
+            <div class="footer11">
+                <br><br>
+               <h3>Address</h3>
+               <br>
+
+            </div>
+             
+            <div class="footer12">
+                <p>
+                    112,patel society,</p>
+                    <p>near panchavati circle,</p>
+                   <p>ellisbridge,ahmedabad</p>
+                   <P>gujarat,380006</P>
+                   
+            </div>
+
+        </div>
+        <div class="footer2">
+            <div class="footer21">
+                <br><br>
+              <h3>Navigate</h3><br>
+            </div>
+        <div class="footer22">
+            
+          <li><a href="home.html">Home</a></li><br>
+          <li><a href="about.html">About</a></li><br>
+          <li><a href="activity.html">Activity</a></li><br>
+          <li><a href="blog.html">Blog</a></li><br>
+          <li><a href="project.html">Project</a></li><br>
+          <li><a href="contact.html">Contact</a></li><br>
+         
+
+        </div>
+        </div>
+        <div class="footer3">
+         <div class="footer31">
+            <br><br>
+            <h3>Follow me</h3><br>
+         </div>
+         <div class="footer32">
+            
+              <a href="https://m.facebook.com/?_rdr" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>&nbsp;
+              <a href="https://instagram.com/darshpatel9502?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>&nbsp;
+              <a href="https://twitter.com/DarshPa03158387?s=09" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
+              <a href="https://www.linkedin.com/in/darsh-patel952002" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            
+         
+         </div><br>
+         <div>
+            <i class="fa-solid fa-envelope fa-2x"></i>
+            <h3>EMAIL</h3>
+            <h4>darshpatel95952002@gmail.com</h4><br>
+
+         </div>
+         <div>
+            <i class="fa-solid fa-phone fa-2x"></i>
+            <h3>PHONE</h3>
+            <h4>+91-2233445566</h4><br>
+         </div>
+        </div>
+        
+    </div>
+    <div class="footer4">
+         <h3>Copywrite 2022 Reserved</h3>
+         <br><br>
+    </div>
+</body>
+
+</html>

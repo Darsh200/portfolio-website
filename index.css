@@ -1,0 +1,102 @@
+
+        
+        
+        
+        div{
+            display: flex;
+            justify-content: space-between;
+            
+             
+            
+        }
+        .headera:hover{
+            
+            font-size: 6mm;
+            color: rgb(37, 37, 230);
+            /* letter-spacing: 1mm; */
+        }
+        
+        li{
+            list-style: none;
+            
+        } 
+        a{
+            text-decoration: none;
+        }
+       
+        
+        .logo{
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            margin-top: 15px;
+            margin-left: 15px;
+            
+            
+            
+            
+
+        }
+        .header{
+            display: flex;
+            list-style: none; 
+            list-style-type: none;          
+            margin-top: 8mm;
+            margin-right: 15mm;
+            font-size: 5mm;
+        
+            
+             }
+             .name{
+                 margin-left: 145mm;
+                 padding-top: 15mm;
+                 font-size: 7mm;
+                
+                 
+                 
+             }
+             .new{
+                 margin-left: 120mm;
+                 padding-top: -5mm;
+                 font-size: 6mm;
+                 text-decoration: underline yellow ;
+                 
+             }
+            
+        .header1{
+            background-image: url("photo2.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+
+        }
+        
+ 
+
+
+        .button{
+            padding-left: 155mm;
+            padding-top: 7mm;
+            height: 40px;
+
+        }
+         
+        
+
+        .mywork{
+             border: 1px solid white;
+             padding: 10px 25px;
+             text-decoration: none;
+             background-color: white;
+             display: inline;
+             text-align: center;
+             font-size: 18px;
+             color: black;
+            margin-left: 150mm;
+             
+        }
+         
+        .mywork a:hover{
+            color: yellow;
+        }
+       
+    

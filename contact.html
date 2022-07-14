@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilities.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+    <style>
+        .header1 {
+            background-image: url("dark-wall-empty-room-with-plants-floor-3d-rendering.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 20vh;
+            position: relative;
+
+        }
+
+        .header1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header12 li {
+            display: inline;
+            list-style-type: none;
+
+
+
+        }
+
+        .header12 li a {
+            text-decoration: none;
+            color: white;
+
+            font-size: 25px;
+            font-weight: 500;
+            font-style: normal;
+            padding: 10px 20px;
+            transition: 1s;
+
+        }
+
+        .header12 li a:hover {
+            background: white;
+            color: grey;
+            transform: scale(1);
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+        .header12 {
+            padding-top: 3%;
+            padding-right: 1%;
+
+        }
+
+        .header11 img {
+            width: 4cm;
+            height: 2cm;
+            float: left;
+            padding-left: 25%;
+            padding-top: 15%;
+            filter: invert(1)
+        }
+
+        .hr {
+            border: 2px solid rgb(217, 132, 29);
+
+        }
+
+
+        .l1 {
+            text-align: center;
+        }
+
+        .l1 .underline {
+            display: inline-block;
+            border: 2px solid yellow;
+            background-color: yellow;
+            height: 2px;
+            width: 80px;
+        }
+
+        .l1 .p {
+            font-size: 7mm;
+        }
+
+        .l2 {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 15mm;
+            padding-right: 35mm;
+        }
+
+
+
+        .l3 {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 133mm;
+            padding-left: 15mm;
+        }
+
+        .l4 {
+
+            padding-left: 15mm;
+            padding-right: 15mm;
+        }
+
+        .underline {
+            /* border: 1px black solid;
+                height: 100px;
+                width: 1170px; */
+            margin-left: 15mm;
+
+        }
+
+        .block {
+            display: block;
+            width: 40%;
+            border: none;
+            background-color: yellow;
+
+            margin-left: 107mm;
+            font-size: 30px;
+            cursor: pointer;
+            text-align: center;
+
+
+        }
+
+        .block:hover {
+            background-color: rgb(95, 116, 108);
+            transition: all 0.5s;
+        }
+
+        .address1 {
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(61, 83, 83);
+        }
+
+        .imagelink img {
+            height: 5cm;
+            width: 10cm;
+            padding-right: 25mm;
+        }
+
+        .address2 {
+            padding-left: 150mm;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: aquamarine;
+            padding-left: 10mm;
+            padding-right: 10mm;
+
+
+        }
+
+        .footer .footer1 .footer11 {
+            text-decoration: underline yellow;
+            text-align: center;
+        }
+
+        .footer .footer1 .footer12 {
+            text-align: center;
+
+        }
+
+        .footer .footer2 .footer21 {
+            text-decoration: underline yellow;
+            text-align: center;
+        }
+
+        .footer22 li a {
+            text-align: center;
+            text-decoration: none;
+            list-style-type: none;
+
+
+        }
+
+        .footer22 li {
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        .footer .footer2 .footer22 li a:hover {
+            color: sandybrown;
+            font-size: 5mm;
+            transition: all 1s;
+        }
+
+        .footer .footer3 .footer32 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer .footer3 .footer31 {
+            text-decoration: underline yellow;
+
+
+        }
+
+        .footer .footer3 i {
+            color: darkgoldenrod;
+        }
+
+        .footer32 i:hover {
+            color: blueviolet;
+        }
+
+        .footer4 {
+            text-align: center;
+            background-color: aquamarine;
+
+        }
+        .text4{
+            padding-left: 25mm;
+        }
+      .underline{
+        margin-left: 15.3cm;
+        border: 1px solid black;
+        height: 1px;
+        width: 100px;
+        background-color: black;
+      }
+            .text1{
+                text-align: center;
+            }
+            .text2{
+                font-size: 6mm;
+            }
+        .form-content {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+.form-content input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px #888 solid;
+
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #444;
+}
+
+.form-content input:focus,
+.form-content input:valid {
+  outline: 0;
+  border-bottom: #222 1.5px solid;
+}
+
+.form-content label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-content label span {
+  display: inline-block;
+  font-size: 16px;
+  min-width: 5px;
+  /* transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+  transition: 0.09s ease;
+}
+.form-content input:focus + label span,
+.form-content input:valid + label span {
+  color: #444;
+  transform: translateY(-30px);
+}
+.text-fields {
+    display: grid;
+    grid-template-areas:
+        "name email"
+        "subject phone"
+        "message message";
+    grid-gap: 1.2rem;
+    margin-bottom: 1.2rem;
+    padding-left: 25mm;
+}
+
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="header1">
+        <div class="header11">
+            <img src="logo main.jpg" alt="logo">
+        </div>
+        <div class="header12">
+            <ul>
+                <li>
+                    <a href="index1.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html"> About</a>
+                </li>
+                <li>
+                    <a href="activity.html"> Activities</a>
+                </li>
+                <li>
+                    <a href="blog.html"> Blog </a>
+                </li>
+                <li>
+                    <a href="work.html"> Projects</a>
+                </li>
+                <li>
+                    <a href="contact.html"> Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <hr class="hr">
+    <br><br>
+
+    <div class="text1"><br><br><br>
+        <div>
+         <h1>CONTACT ME</h1>
+        </div>
+        <div class="underline">
+            
+        </div>
+        <br>
+        <div class="text2">
+        <p>Here is how you can reach me</p>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="text-fields">
+        <div class="form-content">
+            <input type="text" class="text-input name-input" pattern="[a-zA-Z].{2,}" title="Must be alphbets only,minimum 3 " required="">
+            <label><span style="transition-delay:0ms">N</span><span style="transition-delay:80ms">a</span><span style="transition-delay:160ms">m</span><span style="transition-delay:240ms">e</span></label>
+        </div>
+        <div class="form-content">
+
+            <input type="text" class="text-input subject-input" required="">
+            <label><span style="transition-delay:0ms">S</span><span style="transition-delay:80ms">u</span><span style="transition-delay:160ms">b</span><span style="transition-delay:240ms">j</span><span style="transition-delay:320ms">e</span><span style="transition-delay:400ms">c</span><span style="transition-delay:480ms">t</span></label>
+        </div>
+        <div class="form-content">
+
+            <input type="email" class="text-input email-input" title="Email format must be _@_.__" required="">
+                <!-- pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" -->
+            <label><span style="transition-delay:0ms">E</span><span style="transition-delay:80ms">m</span><span style="transition-delay:160ms">a</span><span style="transition-delay:240ms">i</span><span style="transition-delay:320ms">l</span></label>
+        </div>
+        <div class="form-content">
+
+            <input type="text" class="text-input phone-input" title="Exactly 10 digits  " required="">
+                <!-- pattern="[0-9]{10,10}" -->
+            <label><span style="transition-delay:0ms">P</span><span style="transition-delay:80ms">h</span><span style="transition-delay:160ms">o</span><span style="transition-delay:240ms">n</span><span style="transition-delay:320ms">e</span><span style="transition-delay:400ms"> </span><span style="transition-delay:480ms">N</span><span style="transition-delay:560ms">o</span></label>
+        </div>
+
+       
+
+    </div>
+    
+       
+    
+    <div class="text4">
+        <textarea name="ENTER TEXT" id="" cols="140" rows="7" placeholder="ENTER TEXT"></textarea>
+    </div>
+    <br><br>
+    <button type="button" class="block">SUBMIT</button>
+    <br><br><br>
+    <div class="address1">
+        <div class="address"><br><br>
+            <i class="fa-regular fa-address-card fa-2x"></i>
+            <h2>ADDRESS</h2><br>
+            <p class="address2">
+            <p>112,patel society,</p>
+            <p>near panchavati circle,</p>
+            <p>ellisbridge,ahmedabad</p>
+            <P>gujarat,380006</P>
+            </p>
+        </div>
+        <div class="imagelink"><br>
+            <a href="https://goo.gl/maps/TvbvZwi4u4WPQNwY9" target="_blank"><img src="kp address.jpg"
+                    alt="This is photo"></a><br>
+            <br>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer1">
+            <div class="footer11">
+                <br><br>
+                <h3>Address</h3>
+                <br>
+
+            </div>
+
+            <div class="footer12">
+                <p>
+                    112,patel society,</p>
+                <p>near panchavati circle,</p>
+                <p>ellisbridge,ahmedabad</p>
+                <P>gujarat,380006</P>
+
+            </div>
+
+        </div>
+        <div class="footer2">
+            <div class="footer21">
+                <br><br>
+                <h3>Navigate</h3><br>
+            </div>
+            <div class="footer22">
+
+                <li><a href="home.html">Home</a></li><br>
+                <li><a href="about.html">About</a></li><br>
+                <li><a href="activity.html">Activity</a></li><br>
+                <li><a href="blog.html">Blog</a></li><br>
+                <li><a href="project.html">Project</a></li><br>
+                <li><a href="contact.html">Contact</a></li><br>
+
+
+            </div>
+        </div>
+        <div class="footer3">
+            <div class="footer31">
+                <br><br>
+                <h3>Follow me</h3><br>
+            </div>
+            <div class="footer32">
+
+                <a href="https://m.facebook.com/?_rdr" target="_blank"><i
+                        class="fa-brands fa-facebook fa-2x"></i></a>&nbsp;
+                <a href="https://instagram.com/darshpatel9502?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                        class="fa-brands fa-instagram fa-2x"></i></a>&nbsp;
+                <a href="https://twitter.com/DarshPa03158387?s=09" target="_blank"><i
+                        class="fa-brands fa-twitter fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/darsh-patel952002" target="_blank"><i
+                        class="fa-brands fa-linkedin fa-2x"></i></a>
+            </div><br>
+            <div>
+                <i class="fa-solid fa-envelope fa-2x"></i>
+                <h3>EMAIL</h3>
+                <h4>darshpatel95952002@gmail.com</h4><br>
+
+            </div>
+            <div>
+                <i class="fa-solid fa-phone fa-2x"></i>
+                <h3>PHONE</h3>
+                <h4>+91-2233445566</h4><br>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer4">
+        <h3>Copywrite 2022 Reserved</h3>
+        <br><br>
+    </div>
+</body>
+<script>
+    const labels = document.querySelectorAll( "label" );
+
+    labels.forEach( function( label ) {
+        label.innerHTML = label.innerText
+            .split( "" )
+            .map(function(letter, idx){
+        return `<span style='transition-delay:${idx * 80}ms'>${letter}</span>`
+    })
+            .join( "" );
+    } );
+
+</script>
+
+</html>

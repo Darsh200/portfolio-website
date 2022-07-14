@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+        <style>
+            .header
+            {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .list li
+            {
+                display: inline;
+                list-style-type: none;
+                
+                
+                
+            }
+
+            .list li a
+            {
+              text-decoration: none;
+              color: white;
+              
+              font-size:25px;
+              font-weight: 500;
+              font-style: normal;
+              padding: 10px 20px;
+              transition: 1s;
+    
+            }
+
+            .list li a:hover  
+            {
+                background: white;
+                color: grey ;
+                transform: scale(1);
+            }
+            
+            .header
+            {
+                background-image: url("dark-wall-empty-room-with-plants-floor-3d-rendering.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 130vh;
+                position: relative;
+            }
+
+            *
+            {
+                margin: 0%;
+                padding: 0%;
+
+            }
+            
+            .list
+            {
+                padding-top: 3%;
+                padding-right: 1%;
+                
+            }
+
+            .header1 img
+            {  
+            
+               width: 4cm;
+               height: 2cm;
+               float: left;
+               padding-left: 25%;
+               padding-top: 15%;
+               filter: invert(1);
+               
+            }
+
+            .welcome-text 
+            {
+                position: absolute;
+                text-align: center;
+                margin: 26% 39%;
+                margin-top: 55mm;
+                color: white;
+            
+            }
+           
+                      
+
+            .welcome-text a 
+            {
+               border: 1px solid white;
+               padding: 10px 25px;
+               text-decoration: none;
+               font-size: 18px;
+               display: inline-block;
+               color:black;
+               background-color: white;
+            }
+
+            .welcome-text a:hover
+            {
+                background-color: yellow;
+                color: red;
+            }
+
+            .para
+            {
+                text-decoration: underline yellow; 
+                display:block;
+            }
+             
+            .hide
+            {
+                visibility: hidden;
+                
+            }
+            .paragraph{
+                text-align: center;
+            }
+            .paragraph .underline{
+                display: inline-block;
+                border: yellow 1px solid;
+                background-color: yellow;
+                height: 2px;
+                width: 70px;
+                
+            }
+           /* .layout i{
+            color: cornflowerblue;
+           } */
+            .layout1{
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                padding-left: 8mm;
+                padding-right: 8mm;
+            }
+            .layout1 i{
+                color: cornflowerblue;
+            }
+            .layout2{
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                margin-top: 5mm;
+                 /* padding-left: 35mm;  */
+                /* padding-right: 25mm;  */
+                      
+            }
+            .layout2 i{
+                color: darkgoldenrod;
+            }
+            .layout2 .layout21{
+                background-color: antiquewhite;
+                width: 25%;
+                height: 62mm;
+                
+                
+            }
+            .layout2 .layout22{
+                background-color: aqua;
+                width: 25%;
+            }
+            
+            .layout3{
+                text-align: center;
+            }
+            .layout3 .layout32{
+                display: inline;
+                display: inline-block;
+                border: 1px yellow solid;
+                background-color: yellow;
+                height: 2px;
+                width: 80px;
+            }
+            .layout3 i{
+                color: darkgoldenrod;
+            }
+            
+            .layout4{
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                padding-left: 5mm;
+                padding-right: 5mm;
+            }
+            .layout4 h2{
+                text-transform: uppercase;
+            }
+            .layout4 i{
+                color: cornflowerblue;
+                
+            }
+         
+            .icon1{
+               border-radius: 50%; 
+
+               height: 70px; 
+               width: 70px; 
+               line-height: 70px;
+            }
+            .icon1:hover{
+               border-radius: 60%;
+               background-color: cadetblue;
+               height: 90px;
+               width: 90px;
+               line-height: 90px;
+               color: yellow;
+               transition: all 1s;
+            }
+         
+            .footer{
+                display: flex;
+                justify-content: space-between;
+                background-color: aquamarine;
+                padding-left: 10mm;
+                padding-right: 10mm;
+                
+                
+            }
+            .footer .footer1 .footer11{
+                text-decoration: underline yellow;
+                text-align: center;
+            }
+            .footer .footer1 .footer12{
+                text-align: center;
+                
+            }
+            .footer .footer2 .footer21{
+                text-decoration: underline yellow;
+                text-align: center;
+            }
+            .footer22 li a{
+                text-align: center;
+                text-decoration: none;
+                list-style-type: none;
+                
+                
+                
+            }
+            .footer22 li {
+                text-decoration: none;
+                list-style-type: none;
+            }
+            .footer .footer2 .footer22 li a:hover{
+                color: sandybrown;
+                font-size: 4mm;
+                font-size: 5mm;
+                transition: all 1s;
+            }
+            .footer .footer3 .footer32{
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .footer .footer3 .footer31{
+                text-decoration: underline yellow;
+
+                
+            }
+            .footer .footer3 i{
+                color: darkgoldenrod;
+            }
+            .footer32 i:hover{
+                color: blueviolet;
+            }
+            .footer4{
+                text-align: center;
+                background-color: aquamarine;
+                
+            }
+
+        </style>
+    
+</head>
+<body>
+     <div class="header">
+      
+        <div class="header1">
+           
+           <img src="logo main.jpg" alt="logo">
+        </div>
+        <div class="list">
+            <ul>
+                <li> 
+                    <a href="index1.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html"> About</a>
+                </li>
+                <li>
+                    <a href="activity.html"> Activities</a>
+                </li>
+                <li>
+                    <a href="blog.html"> Blog </a>
+                </li>
+                <li>
+                    <a href="work.html"> Projects</a>
+                </li>
+                <li>
+                    <a href="contact.html"> Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+           <div class="welcome-text"> 
+
+            <h1> I Am Darsh</h1>
+            <br>
+            <br>
+            <h3 class="para">
+                WHAT I AM EXPERSTISE IN? 
+            </h3>
+            <br>
+            <h3 class="hide"> UI/UX, Javascript, ReactJS </h3>
+
+            <br>
+             <a href="work.html" class="mywork"> View My Work </a>
+             
+            </div>
+     </div>
+         
+    <div class="paragraph">
+      <div class="special">
+        <br>
+        <h2>I SPECIALISE IN</h2>
+        <br>
+    </div>
+      <div class="underline">
+        <br>
+      </div>
+      <div class="special1">
+        <h3>Web Development and Design and content writting</h3><br><br><br><br>
+      </div>
+    </div>
+    <div class="layout">
+    <div class="layout1">
+        <div>
+            <i class="fa-solid fa-laptop-code fa-2x"></i>
+            <br><br>
+            <h3>WEB DEVELOPMENT</h3>
+            <br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, unde eum. Voluptas illum numquam iusto nobis distinctio obcaecati amet ab.
+            <br>
+            <br><br>
+        </div>
+        <div>
+            <i class="fa-solid fa-cubes fa-2x"></i>
+            <br><br>
+            <h3>UI/UX</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto odio perferendis enim, vero optio sequi necessitatibus id voluptas accusamus ex?</p>
+            <br><br><br>
+        </div>
+        <div>
+            <i class="fa-regular fa-object-ungroup fa-2x"></i>
+            <br><br>
+            <h3>DESIGN</h3>
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quam sunt animi neque quia cum soluta labore ab sapiente possimus.</p>
+            <br><br><br>
+        </div>
+        <div>
+            <i class="fa-solid fa-arrows-spin fa-2x"></i>
+            <br><br>
+            <h3>INTERACTION</h3>
+            <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, quibusdam cupiditate? Voluptate natus recusandae nesciunt tenetur quasi. Omnis, eligendi ut?</p>
+            <br><br><br>
+        </div>
+    </div>
+    <div class="layout2">
+        <div class="layout21">
+            <br><br><br>
+            <i class="fa-solid fa-atom fa-3x"></i>
+            <br><br>
+            <h4>Cients</h4>
+            <br>
+            <h1>
+                10
+            </h1>
+            
+            
+        </div>
+        <div class="layout22">
+            <br><br><br>
+            <i class="fa-solid fa-medal fa-3x"></i>
+            <br><br>
+            <h4>Awards</h4>
+            <br>
+            <h1>
+                3
+            </h1>
+        </div>
+        <div class="layout21">
+            <br><br><br>
+            <i class="fa-solid fa-calendar-check fa-3x"></i>
+            <br><br>
+            <h4>Hourly Worked</h4>
+            <br>
+            <h1>
+                100
+            </h1>
+        </div>
+        <div class="layout22">
+            <br><br><br>
+            <i class="fa-solid fa-arrows-turn-to-dots fa-3x"></i>
+            <br><br>
+            <h4>Project Completed</h4>
+            <br>
+            <h1>
+                5
+            </h1>
+        </div>
+    </div><br><br><br>
+    </div>
+    <div class="layout3">
+        <div class="layout31">
+           <h1>
+            MY CREATIVE PROCESS
+           </h1><br>
+
+        </div>
+        <div class="layout32">
+            <br>
+        </div>
+        <div class="layout33">
+           <h3>
+            All of my UI/UX design projects are based off of a practiced formula to get the result that I am looking for.
+           </h3>
+           <br><br><br>
+        </div>
+    </div>
+    <div class="layout4">
+        <div><br><br><br>
+            <i class="fa-solid fa-book fa-3x icon1" ></i>
+            <br><br>
+            <h2>
+                Discuss project
+            </h2><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rem mollitia, tempore ipsam quis excepturi eos? Esse veritatis dolorem laboriosam.</p>
+        </div>
+        <div><br><br><br>
+            <i class="fa-solid fa-desktop fa-3x icon1"></i>
+            <br><br>
+            <h2>
+               Brainstorming
+            </h2><br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati repudiandae unde ab corrupti possimus nulla enim libero, quod magni officia?</p>
+        </div>
+        <div><br><br><br>
+            <i class="fa-solid fa-microchip fa-3x icon1"></i>
+            <br><br>
+            <h2>
+               UI/UX planning
+            </h2><br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex obcaecati consectetur perspiciatis dolorem nihil ratione iusto culpa illo nulla recusandae.
+            </p>
+        </div>
+        <div><br><br><br>
+            <i class="fa-solid fa-thumbs-up fa-3x icon1"></i>
+            <br><br>
+            <h2>
+               Interaction
+            </h2><br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis doloribus velit omnis iusto repellendus ea quas nesciunt quam. Fugit, libero!</p>
+        </div>
+    </div><br><br>
+    <div class="footer">
+        <div class="footer1">
+            <div class="footer11">
+                <br><br>
+               <h3>Address</h3>
+               <br>
+
+            </div>
+             
+            <div class="footer12">
+                <p>
+                    112,patel society,</p>
+                    <p>near panchavati circle,</p>
+                   <p>ellisbridge,ahmedabad</p>
+                   <P>gujarat,380006</P>
+                   
+            </div>
+
+        </div>
+        <div class="footer2">
+            <div class="footer21">
+                <br><br>
+              <h3>Navigate</h3><br>
+            </div>
+        <div class="footer22">
+            
+          <li><a href="home.html">Home</a></li><br>
+          <li><a href="about.html">About</a></li><br>
+          <li><a href="activity.html">Activity</a></li><br>
+          <li><a href="blog.html">Blog</a></li><br>
+          <li><a href="project.html">Project</a></li><br>
+          <li><a href="contact.html">Contact</a></li><br>
+         
+
+        </div>
+        </div>
+        <div class="footer3">
+         <div class="footer31">
+            <br><br>
+            <h3>Follow me</h3><br>
+         </div>
+         <div class="footer32">
+            
+              <a href="https://m.facebook.com/?_rdr" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>&nbsp;
+              <a href="https://instagram.com/darshpatel9502?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>&nbsp;
+              <a href="https://twitter.com/DarshPa03158387?s=09" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
+              <a href="https://www.linkedin.com/in/darsh-patel952002" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            
+         
+         </div><br>
+         <div>
+            <i class="fa-solid fa-envelope fa-2x"></i>
+            <h3>EMAIL</h3>
+            <h4>darshpatel95952002@gmail.com</h4><br>
+
+         </div>
+         <div>
+            <i class="fa-solid fa-phone fa-2x"></i>
+            <h3>PHONE</h3>
+            <h4>+91-2233445566</h4><br>
+         </div>
+        </div>
+        
+    </div>
+    <div class="footer4">
+         <h3>Copywrite 2022 Reserved</h3>
+         <br><br>
+    </div>
+</body>
+</html>

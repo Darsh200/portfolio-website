@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+          .header1
+            {
+                background-image: url("dark-wall-empty-room-with-plants-floor-3d-rendering.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 20vh;
+                position: relative;
+                
+            }
+            .header1{
+                display: flex;
+                justify-content: space-between;
+            }
+            .header12 li
+            {
+                display: inline;
+                list-style-type: none;
+                
+                
+                
+            }
+
+            .header12 li a
+            {
+              text-decoration: none;
+              color: white;
+              
+              font-size:25px;
+              font-weight: 500;
+              font-style: normal;
+              padding: 10px 20px;
+              transition: 1s;
+    
+            }
+
+            .header12 li a:hover  
+            {
+                background: white;
+                color: grey ;
+                transform: scale(1);
+            }
+            *
+            {
+                margin: 0%;
+                padding: 0%;
+
+            }
+            
+            .header12
+            {
+                padding-top: 3%;
+                padding-right: 1%;
+                
+            }
+
+            .header11 img
+            { 
+               width: 4cm;
+               height: 2cm;
+               float: left;
+               padding-left: 25%;
+               padding-top: 15%;
+               filter:invert(1)
+               
+               
+            }
+            .hr{
+                border: 2px solid rgb(217, 132, 29);
+
+            }
+            .l1{
+               background-color: rgb(188, 150, 52);
+               height: 10cm;
+                
+            }
+            .l11{text-align: center;
+                padding-top: 3.5cm;
+                font-size: 1cm;
+            }
+            .l2{
+                background-color: rgb(230, 215, 196);
+                
+            }
+            .l2 .prname p{
+                padding-left: 10mm;
+            }
+            .footer{
+                display: flex;
+                justify-content: space-between;
+                background-color: aquamarine;
+                padding-left: 10mm;
+                padding-right: 10mm;
+                
+                
+            }
+            .footer .footer1 .footer11{
+                text-decoration: underline yellow;
+                text-align: center;
+            }
+            .footer .footer1 .footer12{
+                text-align: center;
+                
+            }
+            .footer .footer2 .footer21{
+                text-decoration: underline yellow;
+                text-align: center;
+            }
+            .footer22 li a{
+                text-align: center;
+                text-decoration: none;
+                list-style-type: none;
+
+                 
+            }
+            .footer22 li {
+                text-decoration: none;
+                list-style-type: none;
+            }
+
+            .footer .footer2 .footer22 li a:hover{
+                color: sandybrown;
+                font-size: 5mm;
+                transition: all 1s;
+            }
+            .footer .footer3 .footer32{
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .footer .footer3 .footer31{
+                text-decoration: underline yellow;
+
+                
+            }
+            .footer .footer3 i{
+                color: darkgoldenrod;
+            }
+            .footer32 i:hover{
+                color: blueviolet;
+            }
+            .footer4{
+                text-align: center;
+                background-color: aquamarine;
+                
+            }
+            .h3 {
+  color: #ffbc00;
+  /* text-align: center; */
+}
+.projects {
+  line-height: 1.5rem;
+}
+.project_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  background: #555;
+  color: rgb(253, 253, 253);
+}
+.pre {
+  overflow-y: scroll;
+  overflow-x: scroll;
+  height: 40vh;
+}
+h2 {
+  font-size: 2rem;
+  line-height: 5rem;
+  color: rgb(11, 11, 11);
+  margin-left: 1rem;
+}
+/* .container1 h5 {
+  background: url("https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")
+    no-repeat center center/cover;
+  padding: 200px;
+  text-align: center;
+  font-size: 5rem;
+  opacity: 0.8;
+} */
+.pname1 .images{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-gap: 1cm;
+     text-align: center;
+}
+.pname1 .images img{
+    height: 12cm;
+    width: 10cm;
+    
+}
+.pname1 .images1{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-gap: 1cm;
+     text-align: center;
+}
+.pname2 .images1 img{
+    height: 12cm;
+    width: 11cm;
+    
+}
+.pname1 .images1{
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-gap: 1cm;
+     text-align: center;
+}
+.pname3 .images2 img{
+    height: 13cm;
+    width: 33cm;
+    
+}
+
+    </style>
+</head>
+<body>
+    <div class="header1">
+        <div class="header11">
+            <img src="logo main.jpg" alt="logo">
+        </div>
+        <div class="header12">
+            <ul>
+                <li> 
+                    <a href="index1.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html"> About</a>
+                </li>
+                <li>
+                    <a href="activity.html"> Activities</a>
+                </li>
+                <li>
+                    <a href="blog.html"> Blog </a>
+                </li>
+                <li>
+                    <a href="work.html"> Projects</a>
+                </li>
+                <li>
+                    <a href="contact.html"> Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <hr class="hr">
+    <div class="l1">
+        <div class="l11">
+         <h1>My Project</h1>
+        </div>
+    </div>
+    <div class="projectname">
+         <div class="pname1">
+             <h1>&nbsp;(1)Restaurant Website</h1>
+             <br>
+             <br>
+             <div class="images">
+             <img src="contact page.jpeg" alt="">
+             <img src="order page.jpeg" alt="">
+             <img src="blog page.jpeg" alt="">
+             <img src="r1.jpeg" alt="">
+             <img src="r2.jpeg" alt="">
+             <img src="r1.jpeg" alt="">
+            </div>
+         </div>
+         <br><br>
+         <div class="pname2">
+              <h1>&nbsp;(2)Moving circle</h1>
+              <br><br>
+              <div class="images1">
+              <img src="Web capture_9-7-2022_13424_.jpeg" alt="">
+              <img src="Web capture_9-7-2022_13513_.jpeg" alt="">
+              <img src="Web capture_9-7-2022_13525_.jpeg" alt="">
+              </div>
+         </div>
+         <br><br>
+         <div class="pname3">
+             <h1>&nbsp;(3)Moving Line</h1>
+             <br><br>
+             <div class="images2">
+                <img src="moving line.jpg" alt="">
+             </div>
+         </div>
+        
+    </div>
+             
+    <div class="footer">
+        <div class="footer1">
+            <div class="footer11">
+                <br><br>
+               <h3>Address</h3>
+               <br>
+
+            </div>
+             
+            <div class="footer12">
+                <p>
+                    112,patel society,</p>
+                    <p>near panchavati circle,</p>
+                   <p>ellisbridge,ahmedabad</p>
+                   <P>gujarat,380006</P>
+                   
+            </div>
+
+        </div>
+        <div class="footer2">
+            <div class="footer21">
+                <br><br>
+              <h3>Navigate</h3><br>
+            </div>
+        <div class="footer22">
+            
+          <li><a href="home.html">Home</a></li><br>
+          <li><a href="about.html">About</a></li><br>
+          <li><a href="activity.html">Activity</a></li><br>
+          <li><a href="blog.html">Blog</a></li><br>
+          <li><a href="project.html">Project</a></li><br>
+          <li><a href="contact.html">Contact</a></li><br>
+         
+
+        </div>
+        </div>
+        <div class="footer3">
+         <div class="footer31">
+            <br><br>
+            <h3>Follow me</h3><br>
+         </div>
+         <div class="footer32">
+            
+              <a href="https://m.facebook.com/?_rdr" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a>&nbsp;
+              <a href="https://instagram.com/darshpatel9502?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>&nbsp;
+              <a href="https://twitter.com/DarshPa03158387?s=09" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a>
+              <a href="https://www.linkedin.com/in/darsh-patel952002" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            
+         
+         </div><br>
+         <div>
+            <i class="fa-solid fa-envelope fa-2x"></i>
+            <h3>EMAIL</h3>
+            <h4>darshpatel95952002@gmail.com</h4><br>
+
+         </div>
+         <div>
+            <i class="fa-solid fa-phone fa-2x"></i>
+            <h3>PHONE</h3>
+            <h4>+91-2233445566</h4><br>
+         </div>
+        </div>
+        
+    </div>
+    <div class="footer4">
+         <h3>Copywrite 2022 Reserved</h3>
+         <br><br>
+    </div>
+</body>
+</html>
